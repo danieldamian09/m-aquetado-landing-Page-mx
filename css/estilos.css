@@ -6,19 +6,19 @@
 
 body {
     font-family: 'Work Sans', sans-serif;
-	margin: 50px;
+	margin: 30px;
 }
 
 .fondo{
 	background: #8A2387;
-	width: 850px;
+	width: 700px;
 	/* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);
 	/* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #F27121, #E94057, #8A2387);
 	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	margin: auto;
-	height: 800px;
+	height: 1700px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -29,20 +29,17 @@ body {
 
 /* ? ----- PORTADA ----- */
 .portada {
-	width: 800px;
+	width: 650px;
 	background: #fff;
 	border-radius: 20px;
 	margin: auto;
 	/* border: solid 32px #BB1AAF; */
 
-	min-height: 100vh;
+	min-height: auto;
 	/* position: fixed;
 	top: 0;
 	left: 0;
 	right: 0; */
-
-	
-	transition: .5s ease-out all;
 }
 
 /* .portada.oculta {
@@ -57,15 +54,14 @@ body {
 }
 
 .portada .header .logotipo {
-	font-size: 50px;
-	font-size: 900;
+	font-size: 3rem;
 	margin-bottom: 20px;
 }
 
-.portada .header .mensaje {
-	font-size: 16px;
+/* .portada .header .mensaje {
+	font-size: ;
 	font-weight: 600;
-}
+} */
 
 .texto{
 	margin-top: 30px;
@@ -137,4 +133,51 @@ body {
 
 .texto-principal p{
 	margin-top: 50px;
+}
+
+.pasos{
+	margin-left: 20px;
+}
+
+.pasos p, h4{
+	margin-top: 50px;
+	color: #000;
+	text-align: left;
+	padding: 0px 15px;
+	
+}
+
+.pasos p {
+	font-size: 16px;	
+}
+
+.instructivo{
+	margin-top: 150px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.instructivo button{
+	margin-top: 5px;
+	font-size: 18px;
+	width: 200px;
+	padding: 20px 24px;
+	background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #F27121, #E94057, #8A2387);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: #ffffff;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.instructivo h4{
+	font-weight: normal;
+	color: #724CF2;
 }
