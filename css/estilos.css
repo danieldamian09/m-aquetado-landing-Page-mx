@@ -6,40 +6,48 @@
 
 body {
     font-family: 'Work Sans', sans-serif;
+	margin: 50px;
+}
+
+.fondo{
 	background: #8A2387;
+	width: 850px;
 	/* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);
 	/* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #F27121, #E94057, #8A2387);
 	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+	margin: auto;
+	height: 800px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 }
-
 
 
 /* ? ----- PORTADA ----- */
 .portada {
 	width: 800px;
 	background: #fff;
+	border-radius: 20px;
+	margin: auto;
 	/* border: solid 32px #BB1AAF; */
 
 	min-height: 100vh;
-	position: fixed;
+	/* position: fixed;
 	top: 0;
 	left: 0;
-	right: 0;
+	right: 0; */
 
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
+	
 	transition: .5s ease-out all;
 }
 
-.portada.oculta {
+/* .portada.oculta {
 	transform: translateY(100%);
-}
+} */
 
 .portada .header {
 	margin-bottom: 100px;
@@ -65,7 +73,7 @@ body {
 
 
 /* ? ----- MAIN ----- */
-main {
+/* main {
 	max-width: 1000px;
 	margin: auto;
 	width: 90%;
@@ -73,7 +81,7 @@ main {
 	font-size: 18px;
 	line-height: 28px;
 	text-align: left;
-}
+} */
 
 
 
