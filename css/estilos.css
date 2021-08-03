@@ -9,11 +9,11 @@ body {
 }
 
 .fondo{
-	background: #8A2387;
 	width: 750px;
-	background: #7b4397;
+	/* background: #7b4397;
 	background: -webkit-linear-gradient(to right, #dc2430, #7b4397);
-	background: linear-gradient(to right, #dc2430, #7b4397);
+	background: linear-gradient(to right, #dc2430, #7b4397); */
+	background-image: url(../img/fondo.png);
 
 	margin: auto;
 	height: 2050px;
@@ -80,6 +80,20 @@ body {
 	align-items: center;
 	justify-content: center;
 }
+
+/* .simply-seconds-section {
+	animation-name: efectoReloj;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes efectoReloj{
+	0% {transform: rotateX(45deg);}
+	25% {transform: rotateX(70deg);}
+	50% {transform: rotateX(120deg);}
+	75% {transform: rotateX(140deg);}
+	100% {transform: rotateX(160deg);}
+} */
 
 .simply-amount {
 	display: block;
