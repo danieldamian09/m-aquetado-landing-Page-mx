@@ -217,9 +217,19 @@ body {
 .politicas-privacidad{
 	width: 600px;
 	margin: auto;
+	margin-bottom: 15px;
 }
 
 .politicas-privacidad p{
 	font-size: 0.8rem;
 	color: #000;
+}
+
+
+/* ==============================Media Query============================================ */
+
+@media (max-width: 768px){
+	/* .fondo{
+		width: 100% !important;
+	} */
 }
