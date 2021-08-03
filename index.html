@@ -22,7 +22,207 @@
 		}(window), window.jQuery && function (t, n) { t.fn.simplyCountdown = function (t) { return function (t, e) { n(t, e) }(this.selector, t) } }(jQuery, simplyCountdown);
 	</script>
 
-	<link rel="stylesheet" href="css/estilos.css">
+	<!-- <link rel="stylesheet" href="css/estilos.css"> -->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: Poppins-Regular, sans-serif !important;
+		}
+
+		.fondo {
+			width: 750px;
+			/* background: #7b4397;
+	background: -webkit-linear-gradient(to right, #dc2430, #7b4397);
+	background: linear-gradient(to right, #dc2430, #7b4397); */
+			background-image: url(./img/fondo.png);
+
+			margin: auto;
+			height: 1900px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+		}
+
+
+		/* ? ----- PORTADA ----- */
+		.portada {
+			width: 650px;
+			background: #fff;
+			border-radius: 20px;
+			margin: auto;
+			min-height: auto;
+		}
+
+
+		/* ? ----- Cuenta Regresiva ----- */
+		#cuenta {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 100px;
+			position: relative;
+			margin-top: 50px;
+		}
+
+		.linea {
+			position: absolute;
+			top: 40%;
+			background-color: #fff;
+			height: 5px;
+			width: 100%;
+		}
+
+		.simply-section {
+			background: -webkit-linear-gradient(to right, #dc2430, #7b4397);
+			background: linear-gradient(to right, #dc2430, #7b4397);
+			color: #fff;
+			width: 6.25rem;
+			height: 7.5rem;
+			margin: 0 10px;
+			border-radius: 5px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.simply-amount {
+			display: block;
+			font-size: 4rem;
+			font-weight: 700;
+		}
+
+		.simply-word {
+			font-weight: 300;
+			font-size: 1rem;
+		}
+
+
+		/* ? ----- Texto-Principal ----- */
+
+		.texto-principal {
+			color: #724CF2;
+		}
+
+		.texto-principal h2 {
+			font-size: 40px;
+			font-weight: 700;
+			width: 450px;
+			margin: auto;
+		}
+
+		.texto-principal p {
+			margin-top: 50px;
+
+		}
+
+		.mensaje {
+			width: 400px;
+			margin: auto;
+		}
+
+		.mensaje-principal {
+			font-size: 40px;
+		}
+
+		.mensaje p {
+			font-size: 20px;
+		}
+
+		.pasos {
+			margin-left: 20px;
+		}
+
+		.pasos p,
+		h4 {
+			margin-top: 50px;
+			color: #1D1D1B;
+			text-align: center;
+			padding: 0px 15px;
+
+		}
+
+		.pasos p {
+			font-size: 16px;
+			margin: 20px;
+		}
+
+		.instructivo {
+			margin-top: 50px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+		}
+
+		.instructivo button {
+			margin-top: 5px;
+			font-size: 16px;
+			width: 190px;
+			padding: 20px 20px;
+			background: -webkit-linear-gradient(to right, #dc2430, #7b4397);
+			background: linear-gradient(to right, #dc2430, #7b4397);
+			color: #ffffff;
+			border: 1px solid transparent;
+			border-radius: 25px;
+			text-decoration: none;
+			display: inline-block;
+			cursor: pointer;
+		}
+
+		.instructivo h4 {
+			font-weight: normal;
+			color: #724CF2;
+			font-size: 12px;
+		}
+
+		.video {
+			margin-top: 30px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+		}
+
+		.recuperar-datos {
+			margin-top: 50px;
+		}
+
+		.recuperar-datos h3 {
+			font-size: 1.5rem;
+		}
+
+		.recuperar-datos p {
+			color: #000;
+			font-weight: normal;
+			font-size: 1.3rem;
+			margin-top: 15px;
+		}
+
+		.numeros-telefono p {
+			margin-top: 10px;
+			font-size: 2rem;
+		}
+
+		.politicas-privacidad {
+			width: 600px;
+			margin: auto;
+			margin-bottom: 15px;
+		}
+
+		.politicas-privacidad p {
+			font-size: 0.8rem;
+			color: #000;
+		}
+	</style>
 
 </head>
 
@@ -31,16 +231,13 @@
 	<main class="fondo">
 
 		<section class="portada" id="portada">
-			<div class="header">
-				<img src="./img/logo.png" alt="logo">
-			</div>
 
 			<div id="cuenta">
 				<div class="linea"></div>
 			</div>
 
 			<div class="texto-principal">
-				<h2>¿Sabes tu USUARIO y CONTRASEÑA?</h2>
+				<h2>¿SABES TU USUARIO Y CONTRASEÑA?</h2>
 				<div class="mensaje">
 					<p>OPEN se actualizará, y necesitaras tener tu USUARIO y CONTRASEÑA a la mano.</p>
 					<p>¡Tienes tiempo hasta el 29 de agosto!</p>
@@ -124,7 +321,6 @@
 			countUp: false
 		});
 	</script>
-
 </body>
 
 </html>
