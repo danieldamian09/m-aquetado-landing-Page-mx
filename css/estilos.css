@@ -12,11 +12,8 @@ body {
 .fondo{
 	background: #8A2387;
 	width: 700px;
-	/* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);
-	/* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #F27121, #E94057, #8A2387);
-	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	margin: auto;
 	height: 1700px;
 	display: flex;
@@ -33,18 +30,9 @@ body {
 	background: #fff;
 	border-radius: 20px;
 	margin: auto;
-	/* border: solid 32px #BB1AAF; */
-
 	min-height: auto;
-	/* position: fixed;
-	top: 0;
-	left: 0;
-	right: 0; */
 }
 
-/* .portada.oculta {
-	transform: translateY(100%);
-} */
 
 .portada .header {
 	margin-bottom: 100px;
@@ -58,28 +46,9 @@ body {
 	margin-bottom: 20px;
 }
 
-/* .portada .header .mensaje {
-	font-size: ;
-	font-weight: 600;
-} */
-
 .texto{
 	margin-top: 30px;
 }
-
-
-
-/* ? ----- MAIN ----- */
-/* main {
-	max-width: 1000px;
-	margin: auto;
-	width: 90%;
-	padding: 60px 0;
-	font-size: 18px;
-	line-height: 28px;
-	text-align: left;
-} */
-
 
 
 /* ? ----- Cuenta Regresiva ----- */
@@ -90,11 +59,8 @@ body {
 }
 
 .simply-section {
-	/* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);
-	/* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #F27121, #E94057, #8A2387);
-	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	color: #fff;
 	width: 120px;
 	height: 120px;
@@ -115,10 +81,6 @@ body {
 	font-weight: 300;
 	font-size: 20px;
 }
-
-
-/* ? ---------------------------- */
-
 
 
 /* ? ----- Texto-Principal ----- */
@@ -162,16 +124,16 @@ body {
 
 .instructivo button{
 	margin-top: 5px;
-	font-size: 18px;
-	width: 200px;
-	padding: 20px 24px;
+	font-size: 16px;
+	width: 190px;
+	padding: 20px 20px;
 	background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);
 	/* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #F27121, #E94057, #8A2387);
 	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	color: #ffffff;
 	border: 1px solid transparent;
-	border-radius: 10px;
+	border-radius: 25px;
 	text-decoration: none;
 	display: inline-block;
 	cursor: pointer;
@@ -180,4 +142,5 @@ body {
 .instructivo h4{
 	font-weight: normal;
 	color: #724CF2;
+	font-size: 13px;
 }
