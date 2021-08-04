@@ -4,247 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Cuenta Regresiva</title>
-
-	<style>
-		/* ==============================Estilos General============================================ */
-
-		* {
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
-
-		@font-face {
-			font-family: Poppins-Regular;
-			src: url(./Fonts/Poppins-Regular.ttf);
-		}
-
-		@font-face {
-			font-family: Poppins-Bold;
-			src: url(./Fonts/Poppins-Bold_0.otf);
-		}
-
-		@font-face {
-			font-family: Poppins-SemiBold;
-			src: url(./Fonts/Poppins-SemiBold.ttf);
-		}
-
-		@font-face {
-			font-family: Poppins-Medium;
-			src: url(./Fonts/Poppins-Medium.ttf);
-		}
-
-		body {
-			font-family: Poppins-Regular, sans-serif;
-		}
-
-		.fondo {
-			width: 40.62rem;
-			background-image: url("https://pmi--qa--c.documentforce.com/sfc/dist/version/renditionDownload?rendition=ORIGINAL_Jpg&versionId=068250000016JlW&operationContext=DELIVERY&contentId=05T2500000BSG2U&page=0&d=/a/25000000EW0O/uDZhgis_cajy3EbP1tsh5w41BreWj7zdj91ZFpId8HE&oid=00D25000000E5ks&dpt=null&viewId");
-			background-size: cover;
-			margin: auto;
-			height: 1330px;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			text-align: center;
-		}
-
-
-		/* ? ----- PORTADA ----- */
-		.portada {
-			width: 35.7rem;
-			background: #fff;
-			border-radius: 1.25rem;
-			margin: auto;
-			min-height: auto;
-		}
-
-
-		/* ? ----- Texto-Principal ----- */
-
-		.texto-principal {
-			color: #724CF2;
-		}
-
-		.texto-principal h1 {
-			font-size: 2.5rem;
-			line-height: 3rem;
-			font-weight: bold;
-			width: 30rem;
-			margin: 3rem auto 1rem;
-			font-family: Poppins-Bold, sans-serif !important;
-		}
-
-		.texto-principal .mensaje-parrafo {
-			margin-top: 3.12rem;
-			font-family: Poppins-Medium, sans-serif !important;
-			line-height: 1.5rem;
-		}
-
-		.mensaje {
-			width: 32rem;
-			margin: auto;
-		}
-
-		.mensaje-tiempo {
-			font-family: Poppins-SemiBold, sans-serif !important;
-			font-weight: bold;
-		}
-
-		.mensaje-principal {
-			font-size: 2.5rem;
-		}
-
-		.mensaje p {
-			font-size: 1.25rem;
-		}
-
-
-		.pasos p,
-		h4 {
-			margin-top: 3.12rem;
-			color: #606060;
-			text-align: center;
-			padding: 0px 15px;
-			font-size: 1.2rem;
-		}
-
-		.pasos p {
-			margin: 1.25rem;
-		}
-
-		.instructivo {
-			margin-top: 3.12rem;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			text-align: center;
-		}
-
-		.instructivo button {
-			margin-top: 5px;
-			font-size: 1rem;
-			width: 18.75rem;
-			padding: 15px 10px;
-			background: -webkit-linear-gradient(to right, #dc2430, #7b4397);
-			background: linear-gradient(to right, #dc2430, #7b4397);
-			color: #ffffff;
-			border: 1px solid transparent;
-			border-radius: 15px;
-			text-decoration: none;
-			display: inline-block;
-			cursor: pointer;
-		}
-
-		.video {
-			margin-top: 1.87rem;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			text-align: center;
-		}
-
-		.recuperar-datos {
-			width: 25rem;
-			margin: 5rem auto 2rem;
-		}
-
-		.recuperar-datos h3 {
-			font-size: 1.3rem;
-			font-weight: bold;
-			font-family: Poppins-Bold, sans-serif !important;
-		}
-
-		.recuperar-datos p {
-			font-size: 1.1rem;
-			font-weight: bold;
-			margin-top: 0 !important;
-		}
-
-		.dudas p {
-			font-size: 1.1rem;
-			font-weight: bold;
-			font-family: Poppins-SemiBold, sans-serif !important;
-			margin-top: 1rem;
-		}
-
-		.numeros-telefono a {
-			text-decoration: none;
-			color: #724CF2 !important;
-		}
-
-		.numeros-telefono p {
-			font-size: 2rem;
-			font-weight: bold;
-		}
-
-		.politicas-privacidad {
-			width: 34rem;
-			margin: 4rem auto 1.5rem;
-		}
-
-		.politicas-privacidad p {
-			font-size: 0.6rem;
-			color: #000;
-			font-weight: bold;
-		}
-
-		/* ==============================Media Query============================================ */
-
-		@media (min-width: 368px) and (max-width: 768px) {
-			.fondo {
-				width: 100% !important;
-				height: 100% !important;
-			}
-
-			.portada {
-				width: 90% !important;
-				margin: 20px 0px !important;
-			}
-
-			.simply-section {
-				width: 70% !important;
-				height: 80% !important;
-			}
-
-			.texto-principal h1 {
-				width: 90% !important;
-				font-size: 1.5rem !important;
-				line-height: 1.8rem !important;
-			}
-
-			.mensaje {
-				width: 80% !important;
-			}
-
-			.video video {
-				width: 90% !important;
-			}
-
-			.politicas-privacidad {
-				width: 90% !important;
-			}
-
-			.dudas {
-				width: 80% !important;
-				margin: auto !important;
-				margin-top: 15% !important;
-			}
-
-			.recuperar-datos {
-				width: 80% !important;
-				margin: auto !important;
-				margin-top: 15% !important;
-			}
-
-		}
-	</style>
-
+	<title>Cuenta Regresiva Go OPEN</title>
+	<link rel="stylesheet" href="./css/estilos.css">
 </head>
 
 <body>
@@ -252,8 +13,6 @@
 	<main class="fondo">
 
 		<section class="portada" id="portada">
-
-			</div>
 
 			<div class="texto-principal">
 				<h1>¿TIENES DUDAS DE
@@ -273,11 +32,8 @@
 
 				<div class="instructivo">
 					<a href="https://pmi--qa--c.documentforce.com/sfc/dist/version/renditionDownload?rendition=SVGZ&versionId=068250000016Jlb&operationContext=DELIVERY&contentId=05T2500000BSG2j&page=0&d=/a/25000000EW0T/4tyD6NX.iuqyQORzH58YdyZF_RvWCdG4WHiB8pEUMjo&oid=00D25000000E5ks&dpt=null&viewId"
-						download="instructivo"><button>DESCARGA EL
-							INSTRUCTIVO</button></a>
+						download="instructivo"><button>DESCARGA EL INSTRUCTIVO</button></a>
 				</div>
-
-
 
 				<div class="recuperar-datos">
 					<h3>¡IMPORTANTE!</h3>
@@ -300,7 +56,8 @@
 					<p>Comunicación exclusiva para clientes mayoristas, detallistas y fuerza de ventas de Philip Morris
 						México S.A. de C.V. y MMPS S. de R.L de C.V.Queda prohibida su reproducción parcial o total o
 						como material publicitario al consumidor
-						adulto.</p>
+						adulto.
+					</p>
 				</div>
 			</div>
 		</section>

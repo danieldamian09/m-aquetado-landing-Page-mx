@@ -1,235 +1,222 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
+		/* ==============================Estilos General============================================ */
 
-body {
-    font-family: Poppins-Regular, sans-serif !important;
-}
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
 
-.fondo{
-	width: 750px;
-	/* background: #7b4397;
-	background: -webkit-linear-gradient(to right, #dc2430, #7b4397);
-	background: linear-gradient(to right, #dc2430, #7b4397); */
-	background-image: url(../img/fondo.png);
+		@font-face {
+			font-family: Poppins-Regular;
+			src: url(../Fonts/Poppins-Regular.ttf);
+		}
 
-	margin: auto;
-	height: 2050px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-}
+		@font-face {
+			font-family: Poppins-Bold;
+			src: url(../Fonts/Poppins-Bold_0.otf);
+		}
 
+		@font-face {
+			font-family: Poppins-SemiBold;
+			src: url(../Fonts/Poppins-SemiBold.ttf);
+		}
 
-/* ? ----- PORTADA ----- */
-.portada {
-	width: 650px;
-	background: #fff;
-	border-radius: 20px;
-	margin: auto;
-	min-height: auto;
-}
+		@font-face {
+			font-family: Poppins-Medium;
+			src: url(../Fonts/Poppins-Medium.ttf);
+		}
 
+		body {
+			font-family: Poppins-Regular, sans-serif;
+		}
 
-.portada .header {
-	margin-bottom: 100px;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	margin-top: 20px;
-}
-
-.portada .header .logotipo {
-	font-size: 3rem;
-	margin-bottom: 20px;
-}
-
-.texto{
-	margin-top: 30px;
-}
+		.fondo {
+			width: 40.62rem;
+			background-image: url("https://pmi--qa--c.documentforce.com/sfc/dist/version/renditionDownload?rendition=ORIGINAL_Jpg&versionId=068250000016JlW&operationContext=DELIVERY&contentId=05T2500000BSG2U&page=0&d=/a/25000000EW0O/uDZhgis_cajy3EbP1tsh5w41BreWj7zdj91ZFpId8HE&oid=00D25000000E5ks&dpt=null&viewId");
+			background-size: cover;
+			margin: auto;
+			height: 1330px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+		}
 
 
-/* ? ----- Cuenta Regresiva ----- */
-#cuenta {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 100px;
-	position: relative;
-}
-
-.linea{
-	position: absolute;
-	top: 40%;
-	background-color: #fff;
-	height: 5px;
-	width: 100%;
-}
-
-.simply-section {
-	background: -webkit-linear-gradient(to right, #dc2430, #7b4397);
-	background: linear-gradient(to right, #dc2430, #7b4397);
-	color: #fff;
-	width: 6.25rem;
-	height: 7.5rem;
-	margin: 0 10px;
-	border-radius: 5px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-/* .simply-seconds-section {
-	animation-name: efectoReloj;
-	animation-duration: 4s;
-	animation-iteration-count: infinite;
-}
-
-@keyframes efectoReloj{
-	0% {transform: rotateX(45deg);}
-	25% {transform: rotateX(70deg);}
-	50% {transform: rotateX(120deg);}
-	75% {transform: rotateX(140deg);}
-	100% {transform: rotateX(160deg);}
-} */
-
-.simply-amount {
-	display: block;
-	font-size: 4rem;
-	font-weight: 700;
-}
-
-.simply-word {
-	font-weight: 300;
-	font-size: 1rem;
-}
+		/* ? ----- PORTADA ----- */
+		.portada {
+			width: 35.7rem;
+			background: #fff;
+			border-radius: 1.25rem;
+			margin: auto;
+			min-height: auto;
+		}
 
 
-/* ? ----- Texto-Principal ----- */
+		/* ? ----- Texto-Principal ----- */
 
-.texto-principal{
-	color: #724CF2;
-}
+		.texto-principal {
+			color: #724CF2;
+		}
 
-.texto-principal h2{
-	font-size: 40px;
-	font-weight: 700;
-	width: 450px;
-	margin: auto;
-}
+		.texto-principal h1 {
+			font-size: 2.5rem;
+			line-height: 3rem;
+			font-weight: bold;
+			width: 30rem;
+			margin: 3rem auto 1rem;
+			font-family: Poppins-Bold, sans-serif !important;
+		}
 
-.texto-principal p{
-	margin-top: 50px;
+		.texto-principal .mensaje-parrafo {
+			margin-top: 3.12rem;
+			font-family: Poppins-Medium, sans-serif !important;
+			line-height: 1.5rem;
+		}
 
-}
+		.mensaje {
+			width: 32rem;
+			margin: auto;
+		}
 
-.mensaje{
-	width: 400px;
-	margin: auto;
-}
+		.mensaje-tiempo {
+			font-family: Poppins-SemiBold, sans-serif !important;
+			font-weight: bold;
+		}
 
-.mensaje-principal{
-	font-size: 40px;
-}
+		.mensaje-principal {
+			font-size: 2.5rem;
+		}
 
-.mensaje p{
-	font-size: 17px;
-}
+		.mensaje p {
+			font-size: 1.25rem;
+		}
 
-.pasos{
-	margin-left: 20px;
-}
+		.instructivo {
+			margin-top: 3.12rem;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+		}
 
-.pasos p, h4{
-	margin-top: 50px;
-	color: #1D1D1B;
-	text-align: left;
-	padding: 0px 15px;
-	
-}
+		.instructivo button {
+			margin-top: 5px;
+			font-size: 1rem;
+			width: 18.75rem;
+			padding: 15px 10px;
+			background: -webkit-linear-gradient(to right, #dc2430, #7b4397);
+			background: linear-gradient(to right, #dc2430, #7b4397);
+			color: #ffffff;
+			border: 1px solid transparent;
+			border-radius: 15px;
+			text-decoration: none;
+			display: inline-block;
+			cursor: pointer;
+		}
 
-.pasos p {
-	font-size: 16px;
-	margin: 20px;	
-}
+		.video {
+			margin-top: 1.87rem;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+		}
 
-.instructivo{
-	margin-top: 50px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-}
+		.recuperar-datos {
+			width: 25rem;
+			margin: 5rem auto 2rem;
+		}
 
-.instructivo button{
-	margin-top: 5px;
-	font-size: 16px;
-	width: 190px;
-	padding: 20px 20px;
-	background: -webkit-linear-gradient(to right, #dc2430, #7b4397);
-	background: linear-gradient(to right, #dc2430, #7b4397);
-	color: #ffffff;
-	border: 1px solid transparent;
-	border-radius: 25px;
-	text-decoration: none;
-	display: inline-block;
-	cursor: pointer;
-}
+		.recuperar-datos h3 {
+			font-size: 1.3rem;
+			font-weight: bold;
+			font-family: Poppins-Bold, sans-serif !important;
+		}
 
-.instructivo h4{
-	font-weight: normal;
-	color: #724CF2;
-	font-size: 12px;
-}
+		.recuperar-datos p {
+			font-size: 1.1rem;
+			font-weight: bold;
+			margin-top: 0 !important;
+		}
 
-.video{
-	margin-top: 30px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-}
+		.dudas p {
+			font-size: 1.1rem;
+			font-weight: bold;
+			font-family: Poppins-SemiBold, sans-serif !important;
+			margin-top: 1rem;
+		}
 
-.recuperar-datos{
-	margin-top: 50px;
-}
+		.numeros-telefono a {
+			text-decoration: none;
+			color: #724CF2 !important;
+		}
 
-.recuperar-datos h3 {
-	font-size: 1.5rem;
-}
+		.numeros-telefono p {
+			font-size: 2rem;
+			font-weight: bold;
+		}
 
-.recuperar-datos p{
-	color: #000;
-	font-weight: normal;
-	font-size: 1.3rem;
-	margin-top: 15px;
-}
+		.politicas-privacidad {
+			width: 34rem;
+			margin: 4rem auto 1.5rem;
+		}
 
-.numeros-telefono p{
-	margin-top: 10px;
-	font-size: 2rem;
-}
+		.politicas-privacidad p {
+			font-size: 0.6rem;
+			color: #000;
+			font-weight: bold;
+		}
 
-.politicas-privacidad{
-	width: 600px;
-	margin: auto;
-	margin-bottom: 15px;
-}
+		/* ==============================Media Query============================================ */
 
-.politicas-privacidad p{
-	font-size: 0.8rem;
-	color: #000;
-}
+		@media (min-width: 368px) and (max-width: 768px) {
+			.fondo {
+				width: 100% !important;
+				height: 100% !important;
+			}
 
+			.portada {
+				width: 90% !important;
+				margin: 20px 0px !important;
+			}
 
-/* ==============================Media Query============================================ */
+			.simply-section {
+				width: 70% !important;
+				height: 80% !important;
+			}
 
-@media (max-width: 768px){
-	/* .fondo{
-		width: 100% !important;
-	} */
-}
+			.texto-principal h1 {
+				width: 90% !important;
+				font-size: 1.5rem !important;
+				line-height: 1.8rem !important;
+			}
+
+			.mensaje {
+				width: 80% !important;
+			}
+
+			.video video {
+				width: 90% !important;
+			}
+
+			.politicas-privacidad {
+				width: 90% !important;
+			}
+
+			.dudas {
+				width: 80% !important;
+				margin: auto !important;
+				margin-top: 15% !important;
+			}
+
+			.recuperar-datos {
+				width: 80% !important;
+				margin: auto !important;
+				margin-top: 15% !important;
+			}
+
+		}
